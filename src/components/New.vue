@@ -17,6 +17,12 @@
       },
       destroyed(){
         console.log("New was destroyed");
+      },
+      deactivated() {
+        console.log('Deactivated');
+      },
+      activated() {
+        console.log('Activated');
       }
   }
 </script>

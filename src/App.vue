@@ -8,9 +8,12 @@
             <hr>
             <p>{{ selectedComponent }}</p>
             <hr>
-            <component :is="selectedComponent">
-              <p>Default content</p>
-            </component>
+            <keep-alive>
+              <component :is="selectedComponent">
+                <p>Default content</p>
+              </component>
+            </keep-alive>
+
             <!--            <app-quote>
                             <h1 slot="title">{{ quoteTitle }}</h1>
                 <p slot="content">A wonderful Quote!!! using slots</p>
